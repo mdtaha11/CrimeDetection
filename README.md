@@ -26,5 +26,7 @@ Each video is converted into frames and are saved in distinct folders. Then we h
 You can download the prepared dataset from my google drive by going to this link:
 https://drive.google.com/drive/folders/1kXsmOcZyQXyNCuWEHWUphQ7qjo1CANUn?usp=sharing
 
+Methodology:-
+For transfer learning we only used the output from the last pooling layer of Inception v3. The code for this part is given in the given file Generate_weights.py where we have passed each frame into the inception-v3 network and extracted a 2048 vector. 
 
 

@@ -23,5 +23,8 @@ The dataset this project used is a collection of 40 crime videos and 30 normal v
 
 Data preparation:-
 Each video is converted into frames and are saved in distinct folders. Then we have manually selected 40 frames from each video which depicts crimes happening. The 40 frames of each video are saved to numbered folders.
-You can download the prepared dataset. 
+You can download the prepared dataset from my google drive by going to this link:
+https://drive.google.com/drive/folders/1kXsmOcZyQXyNCuWEHWUphQ7qjo1CANUn?usp=sharing
+
+
 

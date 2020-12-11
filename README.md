@@ -32,6 +32,7 @@ The 2048 vector for each image is extracted in the form of list. We have 40 crim
 
 Then we split our dataset of 3D array into 80% training data and 20% test data. The model is then trained on this 3D array. See the code in the file train.py.
 
+Result:-
 We achieved an accuracy of 92.86%. You can improve this by trying more hyperparameter tuning and changing epochs and batch_size. You can also make this project real-time by using OpenCV.
 
 Thankyou, hope you undertood this project well.😁😁😁

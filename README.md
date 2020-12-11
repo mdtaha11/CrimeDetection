@@ -28,5 +28,5 @@ https://drive.google.com/drive/folders/1kXsmOcZyQXyNCuWEHWUphQ7qjo1CANUn?usp=sha
 
 Methodology:-
 For transfer learning we only used the output from the last pooling layer of Inception v3. The code for this part is given in the given file Generate_weights.py where we have passed each frame into the inception-v3 network and extracted a 2048 vector. 
-
+The 2048 vector for each image is extracted in the form of list. We have 40 crime videos, hence 40*40 i.e. 1600 2048-vectors for crime videos and 40*30 i.e 1200 2048-vectors for normal videos. The final list has a length of 2800. We convert it to a 3D array of dimension (70,40,2048) in the beginning of the file train.py.
 

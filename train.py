@@ -12,7 +12,7 @@ arr_weights=np.array([i[0].reshape(2048) for i in weights])
 y=[1 for i in range(len(crime_weights))]+[0 for i in range(len(normal_weights))] 
 
 #We need the weights in the array of form (Total number of videos i.e 40+30, 40,2048)
-data=arr_weights.reshape(len(weights)//40,40,2048)    #len(weights) = 40+30 i.e. 70
+data=arr_weights.reshape(len(weights)//40,40,2048)     #len(weights)//40 = 70
 
 
 #Converting y into categorical values

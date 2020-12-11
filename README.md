@@ -28,5 +28,11 @@ https://drive.google.com/drive/folders/1kXsmOcZyQXyNCuWEHWUphQ7qjo1CANUn?usp=sha
 
 Methodology:-
 For transfer learning we only used the output from the last pooling layer of Inception v3. The code for this part is given in the given file Generate_weights.py where we have passed each frame into the inception-v3 network and extracted a 2048 vector. 
-The 2048 vector for each image is extracted in the form of list. We have 40 crime videos, hence 40*40 i.e. 1600 2048-vectors for crime videos and 40*30 i.e 1200 2048-vectors for normal videos. The final list has a length of 2800. We convert it to a 3D array of dimension (70,40,2048) in the beginning of the file train.py.
+The 2048 vector for each image is extracted in the form of list. We have 40 crime videos, hence 40*40 i.e. 1600 2048-vectors for crime videos and 40*30 i.e 1200 2048-vectors for normal videos. We took 40 frames for each video and grouped them to represent them as a sequence for our RNN. The final list has a length of 2800(1600+1200). We convert it to a 3D array of dimension (70,40,2048) in the beginning of the file train.py. We also created a y variable for storing 1 for crime videos and 0 for normal videos.
+
+Then we split our dataset of 3D array into 80% training data and 20% test data. The model is then trained on this 3D array. See the code in the file train.py.
+
+We achieved an accuracy of 92.86%. You can improve this by trying more hyperparameter tuning and changing epochs and batch_size. You can also make this project real-time by using OpenCV.
+
+Thankyou, hope you undertood this project well.😁😁😁
 

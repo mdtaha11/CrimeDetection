@@ -45,7 +45,7 @@ model.fit(X_train,y_train, epochs=epoch,batch_size=100 )     #This step might ta
  
 test_result=model.predict(X_test)>0.5
 from sklearn.metrics import accuracy_score    
-accuracy_score(y_test,test_result)   #We achieved an accurace of 92.8%
+accuracy_score(y_test,test_result)   #We achieved an accuracy of 92.86%
 
 #You can try with different epoch and batch_sizes or different model architecture to achieve more accuracy 
 
